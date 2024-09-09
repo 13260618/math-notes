@@ -1,0 +1,62 @@
+\documentclass[11pt,a4paper]{report}
+\input{librerias}
+
+\usepackage[top=2.5cm, bottom=2.5cm, right=2.5cm, left=3cm]{geometry}
+
+\usepackage{apacite}
+
+\newcommand{\rsp}{\vspace{-0.5cm}}
+
+
+
+% \setcounter{page}{40}
+\usepackage{chngcntr} % Para cambiar los contadores
+
+\begin{document} 
+	\sloppy
+	
+	\setcounter{tocdepth}{4} %4 indices
+	
+	%\setstretch{1.5}
+	
+	\numberwithin{equation}{chapter} % Numeración de ecuaciones vinculada al capítulo
+	\numberwithin{figure}{chapter} % Numeración de figuras vinculada al capítulo
+	\numberwithin{table}{chapter} % Numeración de tablas vinculada al capítulo
+	
+	
+	
+	% diagramas con tikz
+	
+	
+	\tikzstyle{block} = [rectangle, draw, fill=blue!20, 
+	text width=5em, text centered, rounded corners, minimum height=4em]
+	\tikzstyle{line} = [draw, -latex']
+	
+	
+	
+	
+	\includepdf[pages=-]{frontpage-vc}
+	
+
+	\input{parcial-1-vc}
+	\i%nput{cap1y2} 
+	%\input{chapter02}
+	
+	%\newpage
+ 
+%	\setcounter{page}{11}
+	
+	
+	%\input{cap3}  
+	%\input{cap4}
+	
+%	\input{glosario}
+	
+	\bibliographystyle{apacite}
+%	\bibliography{referencias.bib}
+	
+%	\input{anexos}
+	
+	
+\end{document}
+
